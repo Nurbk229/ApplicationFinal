@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slider_pager_details"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutHomeAdmin"
+            android:layout_width="159dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="360dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn"
+            app:tabBackground="@drawable/slider_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayoutHomeAdmin" />
+
+        <TextView
+            android:id="@+id/txtNameProductDtails"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:maxLength="13"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/txtPriceProductDetails"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:gravity="end"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtNameProductDtails" />
+
+
+        <RatingBar
+            android:id="@+id/ratingProductDetails"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            android:theme="@style/RatingBar"
+            app:layout_constraintEnd_toEndOf="@+id/txtPriceProductDetails"
+            app:layout_constraintTop_toBottomOf="@+id/txtPriceProductDetails" />
+
+        <TextView
+            android:id="@+id/txtDecsrptionProductDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/ratingProductDetails"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txtNameProductDtails"
+            app:layout_constraintTop_toBottomOf="@+id/ratingProductDetails" />
+
+        <Button
+            android:id="@+id/btnEditProductDetais"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_btn"
+            android:elevation="10dp"
+            android:text="Edit Product"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtDecsrptionProductDetails"
+            app:layout_constraintStart_toStartOf="@+id/txtDecsrptionProductDetails"
+            app:layout_constraintTop_toBottomOf="@+id/txtDecsrptionProductDetails" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+<ImageView
+    android:id="@+id/btnBack"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_margin="15dp"
+    android:src="@drawable/ic_arrow_back"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

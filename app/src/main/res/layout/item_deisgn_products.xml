@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnItemProduct"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/productImg"
+        android:layout_width="125dp"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="10dp"
+        app:roundedCorners="all" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImg"
+            android:layout_marginTop="10dp"
+            android:text="$"
+            android:textColor="#292929"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImg"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#292929"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

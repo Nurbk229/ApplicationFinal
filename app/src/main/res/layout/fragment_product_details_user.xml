@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:id="@+id/btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/slider_pager_detailsU"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutHomeAdminU"
+                android:layout_width="159dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="360dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn"
+                app:tabBackground="@drawable/slider_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+
+            <View
+                android:id="@+id/viewU"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_details"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayoutHomeAdminU" />
+
+            <TextView
+                android:id="@+id/txtNameProductDtailsU"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:maxLength="13"
+                android:text="Women Print Tee"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="@+id/viewU"
+                app:layout_constraintTop_toTopOf="@+id/viewU" />
+
+            <TextView
+                android:id="@+id/txtPriceProductDetailsU"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:gravity="end"
+                android:text="$150.54"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtNameProductDtailsU" />
+
+
+            <RatingBar
+                android:id="@+id/ratingProductDetailsU"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:theme="@style/RatingBar"
+                app:layout_constraintEnd_toEndOf="@+id/txtPriceProductDetailsU"
+                app:layout_constraintTop_toBottomOf="@+id/txtPriceProductDetailsU" />
+
+            <TextView
+                android:id="@+id/txtDecsrptionProductDetailsU"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Licensed under the Apache License, Version 2.0
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@+id/ratingProductDetailsU"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtNameProductDtailsU"
+                app:layout_constraintTop_toBottomOf="@+id/ratingProductDetailsU" />
+
+            <Button
+                android:id="@+id/btnAddProductDetaisU"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_btn"
+                android:elevation="10dp"
+                android:text="Add Cart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtDecsrptionProductDetailsU"
+                app:layout_constraintStart_toStartOf="@+id/txtDecsrptionProductDetailsU"
+                app:layout_constraintTop_toBottomOf="@+id/txtDecsrptionProductDetailsU" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnLocationProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                app:layout_constraintBottom_toTopOf="@+id/viewU"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_my_location" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/btnBackU"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

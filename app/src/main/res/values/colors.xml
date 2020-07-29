@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="blackTextColor">#000</color>
+
+    <color name="colorLoginPrimaryDark">#FDFFFF</color>
+
+    <color name="cardColor">#ffffff</color>
+    <color name="color_gray">#535353</color>
+    <color name="textcardColor">#3f3f3f</color>
+    <color name="blue">#00ACEC</color>
+
+    <color name="bgRating">#ffee00</color>
+</resources>

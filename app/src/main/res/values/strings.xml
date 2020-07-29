@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Shopping</string>
+
+    <string name="description"> Widget.AppCompat.RatingBar.Small. The only difference between normal rating bar style and small rating bar style is star size of ranting bar. Below xml shows applying small rating bar style to RatingBar using style attribute. Widget.AppCompat.RatingBar.Small. The only difference between normal rating bar style and small rating bar style is star size of ranting bar. Below xml shows applying small rating bar style to RatingBar using style attribute.</string>
+
+    <string name="m">
+        <a href="https://instagram.com/ma7moud_k3?igshid=2ospc9ay0oy6">https://instagram.com/ma7moud_k3?igshid=2ospc9ay0oy6</a>
+    </string>
+    <string name="n">
+        <a href="https://instagram.com/6n7u8r?igshid=151p3h0w5il73">https://instagram.com/6n7u8r?igshid=151p3h0w5il73</a>
+    </string>
+    <string name="n1">
+        <a href="https://instagram.com/nour_you?igshid=wf1tfu1s9g2g">https://instagram.com/nour_you?igshid=wf1tfu1s9g2g</a>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
