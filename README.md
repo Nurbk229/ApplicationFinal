@@ -50,3 +50,15 @@ implementation "androidx.recyclerview:recyclerview:$X.Y.Z"
 implementation "com.google.firebase:firebase-storage:$X.Y.Z"
 
 implementation "androidx.legacy:legacy-support-v4:$X.Y.Z"
+
+
+
+## Usage
+
+FirebaseUI has separate modules for using Firebase Realtime Database, Cloud Firestore,
+Firebase Auth, and Cloud Storage. To get started, see the individual instructions for each module:
+
+* [FirebaseUI Auth](auth/README.md)
+* [FirebaseUI Firestore](firestore/README.md)
+* [FirebaseUI Database](database/README.md)
+* [FirebaseUI Storage](storage/README.md)
