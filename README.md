@@ -34,3 +34,19 @@ firebase-ui-firestore
 firebase-ui-storage
 |--- com.google.firebase:firebase-storage
 ```
+
+#### Realtime Database
+
+```groovy
+implementation "com.google.firebase:firebase-database:$X.Y.Z"
+
+implementation "androidx.legacy:legacy-support-v4:$X.Y.Z"
+implementation "androidx.recyclerview:recyclerview:$X.Y.Z"
+```
+
+#### Storage
+
+```groovy
+implementation "com.google.firebase:firebase-storage:$X.Y.Z"
+
+implementation "androidx.legacy:legacy-support-v4:$X.Y.Z"
